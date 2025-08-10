@@ -6,8 +6,9 @@
   <title>بررسی WebView</title>
 </head>
 <body>
-  <button onclick="checkIfWebView()">کلیک کن برای بررسی</button>
-
+  <button onclick="checkIfWebView()">checkout</button>
+<body>
+  <button onclick="callback()">callback</button>
   <script>
     function checkIfWebView() {
       var userAgent = navigator.userAgent.toLowerCase();
@@ -18,6 +19,12 @@
       } else {
         alert("این سایت در مرورگر معمولی باز شده!");
       }
+    }
+  </script>
+
+  <script>
+    function callback(){
+      window.location.href = "app://com.taghvimvakil?id=8009";
     }
   </script>
 </body>
