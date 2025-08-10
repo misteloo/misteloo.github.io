@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Action</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بررسی WebView</title>
 </head>
 <body>
-    <button onclick="showMessage()">کلیک کن</button>
+  <button onclick="checkIfWebView()">کلیک کن برای بررسی</button>
 
-    <script>
+  <script>
     function checkIfWebView() {
       var userAgent = navigator.userAgent.toLowerCase();
 
-      
+      // بررسی اینکه آیا WebView فلاتر هست
       if (userAgent.indexOf("flutter") !== -1) {
         alert("این سایت داخل WebView فلاتر باز شده!");
       } else {
