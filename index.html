@@ -9,16 +9,16 @@
     <button onclick="showMessage()">کلیک کن</button>
 
     <script>
-        var userAgent = navigator.userAgent.toLowerCase();
+    function checkIfWebView() {
+      var userAgent = navigator.userAgent.toLowerCase();
 
-        // بررسی اینکه آیا WebView فلاتر هست
-        if (userAgent.indexOf("flutter") !== -1) {
-          // سایت داخل WebView فلاتر باز شده
-          alert("این سایت داخل WebView فلاتر باز شده!");
-        } else {
-          // سایت در مرورگر معمولی باز شده
-          alert("این سایت در مرورگر معمولی باز شده!");
-        }
-    </script>
+      
+      if (userAgent.indexOf("flutter") !== -1) {
+        alert("این سایت داخل WebView فلاتر باز شده!");
+      } else {
+        alert("این سایت در مرورگر معمولی باز شده!");
+      }
+    }
+  </script>
 </body>
 </html>
