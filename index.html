@@ -1,4 +1,18 @@
-<!DOCTYPE>
-<html>
-  <h1>H!</h1>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action</title>
+</head>
+<body>
+    <button onclick="showMessage()">کلیک کن</button>
+
+    <script>
+        function showMessage() {
+          let gateWay = navigator.userAgent == "flutter-tambord-app" ? "yes" : "no";
+            alert(gateWay);
+        }
+    </script>
+</body>
 </html>
