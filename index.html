@@ -9,10 +9,21 @@
     <button onclick="showMessage()">کلیک کن</button>
 
     <script>
-        function showMessage() {
-          let gateWay = navigator.userAgent == "flutter-tambord-app" ? "yes" : "no";
-            alert(gateWay);
-        }
-    </script>
+  function checkIfWebView() {
+    var userAgent = navigator.userAgent.toLowerCase();
+
+    // بررسی اینکه آیا WebView فلاتر هست
+    if (userAgent.indexOf("flutter") !== -1) {
+      // سایت داخل WebView فلاتر باز شده
+      alert("این سایت داخل WebView فلاتر باز شده!");
+    } else {
+      // سایت در مرورگر معمولی باز شده
+      alert("این سایت در مرورگر معمولی باز شده!");
+    }
+  }
+
+  // فراخوانی تابع برای بررسی
+  checkIfWebView();
+</script>
 </body>
 </html>
