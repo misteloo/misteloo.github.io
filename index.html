@@ -6,9 +6,9 @@
   <title>بررسی WebView</title>
 </head>
 <body>
-  <button onclick="checkIfWebView()">checkout</button>
+  <button onclick="subscribeItem()">subscribe</button>
 <body>
-  <button onclick="callback()">callback</button>
+  <button onclick="purchaseItem()">purchase</button>
   <script>
     function checkIfWebView() {
       var userAgent = navigator.userAgent.toLowerCase();
@@ -23,8 +23,14 @@
   </script>
 
   <script>
-    function callback(){
-      window.location.href = "app://com.taghvimvakil?id=8009";
+    function purchaseItem(){
+      window.location.href = "app://com.taghvimvakil?cons=test_consume_1";
+    }
+  </script>
+
+  <script>
+    function subscribeItem(){
+      window.location.href = "app://com.taghvimvakil?subs=test_time_1";
     }
   </script>
 </body>
