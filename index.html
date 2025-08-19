@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بررسی WebView</title>
+</head>
+<body>
+  <button onclick="subscribeItem()">subscribe</button>
+<body>
+  <button onclick="purchaseItem()">purchase</button>
+  <script>
+    function checkIfWebView() {
+      var userAgent = navigator.userAgent.toLowerCase();
+
+      // بررسی اینکه آیا WebView فلاتر هست
+      if (userAgent.indexOf("flutter") !== -1) {
+        alert("این سایت داخل WebView فلاتر باز شده!");
+      } else {
+        alert("این سایت در مرورگر معمولی باز شده!");
+      }
+    }
+  </script>
+
+  <script>
+    function purchaseItem(){
+      window.location.href = "app://com.taghvimvakil?cons=test_consume_1";
+    }
+  </script>
+
+  <script>
+    function subscribeItem(){
+      window.location.href = "app://com.taghvimvakil?subs=test_time_1";
+    }
+  </script>
+</body>
+</html>
