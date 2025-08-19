@@ -1,37 +1,25 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html>
 <head>
+  <base href="/">
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>بررسی WebView</title>
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="" content="">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="flutter_application_1">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Maze</title>
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <button onclick="subscribeItem()">subscribe</button>
-<body>
-  <button onclick="purchaseItem()">purchase</button>
-  <script>
-    function checkIfWebView() {
-      var userAgent = navigator.userAgent.toLowerCase();
-
-      // بررسی اینکه آیا WebView فلاتر هست
-      if (userAgent.indexOf("flutter") !== -1) {
-        alert("این سایت داخل WebView فلاتر باز شده!");
-      } else {
-        alert("این سایت در مرورگر معمولی باز شده!");
-      }
-    }
-  </script>
-
-  <script>
-    function purchaseItem(){
-      window.location.href = "app://com.taghvimvakil?cons=test_consume_1";
-    }
-  </script>
-
-  <script>
-    function subscribeItem(){
-      window.location.href = "app://com.taghvimvakil?subs=test_time_1";
-    }
-  </script>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
