@@ -9,6 +9,7 @@
   <button onclick="subscribeItem()">subscribe</button>
 <body>
   <button onclick="purchaseItem()">purchase</button>
+  <button onclick="openLink()">link</button>
   <script>
     function checkIfWebView() {
       var userAgent = navigator.userAgent.toLowerCase();
@@ -31,6 +32,12 @@
   <script>
     function subscribeItem(){
       window.location.href = "app://com.taghvimvakil?subs=test_time_1";
+    }
+  </script>
+
+  <script>
+    function openLink(){
+      window.location.href = "app://com.taghvimvakil?link=adliran.ir";
     }
   </script>
 </body>
